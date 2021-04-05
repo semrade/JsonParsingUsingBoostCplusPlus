@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Json_file_training" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Json file training" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-lboost_system" />
+					<Add option="-lboost_system-mt" />
+					<Add directory="C:/boost_1_72_0" />
+				</Compiler>
+				<Linker>
+					<Add library="C:/boost_1_72_0/tools/build/boost_build/boost/bin.v2/libs/filesystem/build/msvc-14.2/debug/link-static/threading-multi/libboost_filesystem-vc142-mt-gd-x32-1_72.lib" />
+					<Add directory="C:/boost_1_72_0/tools/build/boost_build/boost/bin.v2/libs" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Json file training" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="MyJSONFile.json" />
+		<Unit filename="file.json" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
